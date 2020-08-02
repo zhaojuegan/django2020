@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="{% static "css/css.css" %}">
+    <link rel="stylesheet" href="{% static "css/css2.css" %}">
+</head>
+<body>
+    <form action="http://127.0.0.1:8000/day01/view/kks/" method="post">
+            <div>
+                <span>请注册</span>
+                <a href="form2.html">立即登录></a>
+                <hr>
+                <input class="in1" type="tel" placeholder="请输入手机号"><br>
+                <input class="in2" type="text" placeholder="请输入短信验证码">
+                <input class="in3" type="button" value="发送验证码"><br>
+                <input class="in1" type="text" placeholder="请输入用户名"><br>
+                <input class="in1" type="password" placeholder="请输入密码"><br>
+                <input class="in1" type="password" placeholder="请再次输入密码"><br>
+
+                <input class="in2" type="text" placeholder="请输入图形验证码">
+                <input class="tu" type="button"><br>
+                <input class="in4" type="submit" value="立即注册">
+		    </div>
+        </form>
+</body>
+</html>

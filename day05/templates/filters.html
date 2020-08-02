@@ -1,0 +1,16 @@
+{% load filters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        {{ "hello"|myuper}} <br>
+        {{ "HELLO"|mylower}} <br>
+        {% show_name "aabb"%}  <br>
+        {% time1 '%Y-%m-%d %H:%M:%S'%} <br>
+    </div>
+</body>
+</html>

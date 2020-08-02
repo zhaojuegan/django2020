@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+     <link rel="stylesheet" href="{% static "css/css2.css" %}">
+</head>
+<body>
+    <div>
+        <form action="http://127.0.0.1:8000/day01/sorty/form1data/" method="post">
+
+
+            <span class="sp">{{ name|default:"请登录" }}</span>
+			<a id="ida" href="http://127.0.0.1:8000/day01/form/">{{ test|default:"立即注册" }} ></a>
+			<hr>
+			<input class="in1" name="username" placeholder={{ phone|lower }}><br>
+			<input class="in2" type="password"  name="password" placeholder={{ password|default:"请输入密码" }}><br>
+			<span><input class="in3" type="checkbox"/>{{ xs|default:"七天内自动登录" }}</span>
+			<a id="id2" href="#">{{ wj|default:"忘记密码?" }}</a><br>
+			<input class="in5" type="submit" value="{{ dl }}" />
+        </form>
+    </div>
+</body>
+</html>

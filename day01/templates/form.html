@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="stylesheet" href="{% static "css/css.css" %}">
+
+</head>
+<body>
+    <form action="http://127.0.0.1:8000/day01/sorty/" method="post">
+            <div>
+                <span>{{ zh_uce }}</span>
+                <a href="http://127.0.0.1:8000/day01/form2/">{{ d_l }}></a>
+                <hr>
+                <input class="in1" type="tel" name="phone" placeholder="{{ phone }}"><br>
+                <input class="in2" type="text" name="yzm" placeholder="{{ yzm }}">
+                <input class="in3" type="button" value="{{ send }}"><br>
+                <input class="in1" type="text" name="username" placeholder="{{ username }}"><br>
+                <input class="in1" type="password" name="password" placeholder="{{ password }}"><br>
+                <input class="in1" type="password" name="repassword" placeholder="{{ re_password }}"><br>
+                <input class="in2" type="text" name="txyzm" placeholder="{{ tx_yzm }}">
+                <input class="tu" type="button"><br>
+                <input class="in4" type="submit" value="{{ sub_mit }}">
+		    </div>
+    </form>
+</body>
+</html>

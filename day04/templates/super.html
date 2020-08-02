@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block Title %}
+    music
+{% endblock %}
+{#{{ block.super }} 这个将会继承base.html的所有 但是如果本页面有写block 以及名称 将不会显示这些写了blocak 名称的内容#}
+{% block content %}
+    这是自己的音乐内容   <br>
+{% endblock %}
+{% block demo %}
+   这是引用的内容: {% include 'yy.html' %}
+{% endblock %}

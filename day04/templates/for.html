@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for</title>
+</head>
+<body>
+    {% for foo in name %}
+        {% if forloop.counter == 1 %}
+              <li>这是第一个值{{ foo }}</li>
+        {% else %}
+              {{ foo }}
+        {% endif %}
+    {% endfor %}
+    
+</body>
+</html>

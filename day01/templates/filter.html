@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>filter</title>
+</head>
+<body>
+    <div>
+        {{ name|default:"laowang" }} <br>
+        {{ test|lower }} <br>
+        {{ Test|capfirst }} <br>
+        {{ num1|add:num2 }} <br>
+        {{ lis|first }} || {{ lis|last }}<br>
+        {{ data|date }} <br>
+        {{ data|time }} <br>
+        {{ data|date:"Y/m/d" }} <br>
+        {{ data|time:"h-i-s" }} <br>
+        {{ lis|length }} <br>
+    </div>
+</body>
+</html>
